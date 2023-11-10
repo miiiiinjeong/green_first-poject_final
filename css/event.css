@@ -1,0 +1,265 @@
+.event {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.event-inner {
+  position: relative;
+  width: 76.04166667vw;
+  margin: 0 auto;
+}
+.event-img-wrap {
+  position: relative;
+  display: block;
+}
+.bg {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+#container {
+  width: 500px;
+  margin: 0 auto;
+}
+/* 
+#container {
+  width: 500px;
+  margin: 0 auto;
+} */
+ul,
+li {
+  clear: both;
+  list-style: none;
+}
+.field {
+  float: left;
+  width: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 55px;
+  text-align: right;
+  margin-right: 15px;
+}
+input[type="text"],
+input[type="email"] {
+  float: left;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+  outline: none;
+}
+.title h2 {
+  font-size: 18px;
+}
+#user-info {
+  padding: 5px;
+}
+.r {
+  line-height: 55px;
+}
+#buttons > li:first-child {
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  left: 24%;
+}
+#buttons > li:nth-child(2) {
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  right: 24%;
+}
+#buttons > li > #complete,
+#buttons > li > #cancel,
+#openBtn {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #eee;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "NanumSquareRound";
+  font-weight: bold;
+}
+#buttons > li:hover #complete {
+  background-color: #3ac284;
+}
+#buttons > li:hover #cancel {
+  background-color: #3ac284;
+}
+
+#modal.modal-overlay {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#modal .modal-window {
+  display: none;
+  position: fixed;
+  bottom: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  background: #fff;
+  box-shadow: 8px 8px 1px 0 rgba(55, 62, 59, 0.716);
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  z-index: 99999;
+}
+#modal .title {
+  padding-left: 10px;
+  display: inline;
+  color: rgb(108, 108, 108);
+}
+#modal .title h2 {
+  display: inline;
+}
+#modal .close-area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+}
+.notice-text {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  margin-top: 20px;
+  text-align: center;
+}
+#openBtn {
+  width: 8.33333333vw;
+  height: 4.16666667vw;
+  position: absolute;
+  bottom: 3.125vw;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4.16666667vw;
+  font-size: 20px;
+  font-family: "NanumSquareRound";
+  font-weight: bold;
+  border: 0;
+  background-color: #f9e4f1;
+}
+#openBtn:hover {
+  color: #fff;
+  background-color: #e1598f;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1247px) {
+  .field {
+    min-width: 80px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  input[type="text"],
+  input[type="email"] {
+    float: left;
+    min-width: 100px;
+    min-height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+    outline: none;
+  }
+  .title h2 {
+    font-size: 18px;
+  }
+  #user-info {
+    padding: 5px;
+  }
+  .r {
+    line-height: 30px;
+  }
+  #buttons > li:first-child {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 24%;
+  }
+  #buttons > li:nth-child(2) {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    right: 24%;
+  }
+  #buttons > li > #complete,
+  #buttons > li > #cancel {
+    min-width: 100px;
+    min-height: 50px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #eee;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "NanumSquareRound";
+    font-weight: bold;
+  }
+  #buttons > li:hover #complete {
+    background-color: #3ac284;
+  }
+  #buttons > li:hover #cancel {
+    background-color: #3ac284;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #openBtn {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #openBtn {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #openBtn {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #openBtn {
+    bottom: 2.52083333vw;
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #openBtn {
+    bottom: 1.42083333vw;
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #openBtn {
+    bottom: 1.82083333vw;
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+  }
+}
